@@ -19,30 +19,39 @@ fonte oficial de conteúdo e imagens. Já são reais/extraídos do material dele
 - Descrições dos 6 procedimentos — extraídas do texto original do PDF.
 - Título profissional "Tricologista | Biomédico Esteta" (conforme a arte do
   PDF).
+- WhatsApp: `(88) 99644-7060` (confirmado pelo profissional).
+- Instagram: [@drjosecarlosfontenele](https://www.instagram.com/drjosecarlosfontenele/)
+  (confirmado pelo profissional).
 
 ## O que ainda é placeholder
 
-O PDF não trazia número de CRBM, telefone, e-mail, endereço ou link de
-WhatsApp/Maps (os botões "AGENDA" e "INSTAGRAM" da arte não tinham link
-clicável embutido no PDF). Também não foi possível acessar a pasta do Google
-Drive nem o Instagram (bloqueados neste ambiente), então esses dados
-continuam como exemplo em `src/content/site-data.ts`, marcados com
+O PDF não trazia número de CRBM, e-mail ou endereço. Também não foi possível
+acessar a pasta do Google Drive (bloqueada neste ambiente), então esses
+dados continuam como exemplo em `src/content/site-data.ts`, marcados com
 `// TODO`:
 
 - Número de registro no CRBM.
-- Número de WhatsApp (`whatsappNumber`, formato internacional só com dígitos).
-- Telefone de exibição e e-mail de contato.
+- E-mail de contato.
 - Endereço completo, bairro/cidade, CEP e link do Google Maps.
 - Redes sociais adicionais além do Instagram.
 
+### Foto do Hero
+Foi enviada uma foto de referência para o Hero (blazer verde-oliva, fundo
+transparente) diretamente colada no chat, mas este ambiente remoto não
+consegue salvar em disco imagens coladas inline (apenas arquivos enviados
+como anexo/upload, como o PDF, ficam acessíveis). A foto usada hoje em
+`public/images/hero-portrait.jpg` é a mesma pose/sessão extraída do PDF
+(variante de blazer preto). Para usar exatamente a foto do blazer verde,
+reenvie-a como **anexo de arquivo** (não colada no corpo da mensagem) e
+troque `public/images/hero-portrait.jpg`.
+
 ### Seção "Resultados" (antes/depois)
-As duas fotos de couro cabeludo (antes/depois) que você colou diretamente no
-chat no início da conversa não puderam ser salvas em disco por este ambiente
-remoto, e não estavam neste PDF. `public/images/scalp-before.svg` e
-`scalp-after.svg` continuam sendo ilustrações genéricas — troque pelos
-arquivos reais em `src/components/sections/before-after.tsx` (`beforeImage`/
-`afterImage`) antes de publicar, já que é a única seção com imagens de
-exemplo hoje.
+As duas fotos de couro cabeludo (antes/depois) coladas no chat no início da
+conversa têm a mesma limitação acima e não estavam neste PDF.
+`public/images/scalp-before.svg` e `scalp-after.svg` continuam sendo
+ilustrações genéricas — troque pelos arquivos reais (enviados como anexo)
+em `src/components/sections/before-after.tsx` (`beforeImage`/`afterImage`)
+antes de publicar.
 
 ## Domínio
 `src/app/layout.tsx`, `src/app/sitemap.ts` e `src/app/robots.ts` usam um

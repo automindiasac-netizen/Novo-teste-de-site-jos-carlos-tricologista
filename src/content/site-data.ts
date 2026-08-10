@@ -2,11 +2,10 @@
  * Conteúdo central do site.
  *
  * Textos e fotos dos procedimentos vêm do material (PDF) enviado pelo
- * profissional. Não foi possível acessar a pasta do Google Drive nem o
- * perfil do Instagram (bloqueados neste ambiente de execução), então os
- * campos marcados com "// TODO" abaixo (contato, endereço, CRBM) ainda
- * usam valores de exemplo e devem ser conferidos antes de publicar. Veja
- * NOTES.md na raiz do projeto para a lista completa.
+ * profissional. WhatsApp e Instagram são reais (confirmados pelo
+ * profissional). Os campos ainda marcados com "// TODO" abaixo (CRBM,
+ * endereço, e-mail) continuam como exemplo e devem ser conferidos antes de
+ * publicar. Veja NOTES.md na raiz do projeto para a lista completa.
  */
 
 export const professional = {
@@ -23,10 +22,10 @@ export const professional = {
   ],
   instagramHandle: "@drjosecarlosfontenele",
   instagramUrl: "https://www.instagram.com/drjosecarlosfontenele/",
-  whatsappNumber: "5585999999999", // TODO: confirmar número de WhatsApp (formato internacional, apenas dígitos)
+  whatsappNumber: "5588996447060",
   whatsappMessage:
     "Olá, Dr. José Carlos! Gostaria de agendar uma avaliação capilar.",
-  phoneDisplay: "(85) 99999-9999", // TODO: confirmar telefone de contato
+  phoneDisplay: "(88) 99644-7060",
   email: "contato@drjosecarlosfontenele.com.br", // TODO: confirmar e-mail
   location: {
     clinicName: "Clínica de Tricologia Dr. José Carlos Fontenele", // TODO: confirmar nome da clínica
