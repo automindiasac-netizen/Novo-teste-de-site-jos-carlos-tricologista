@@ -2,6 +2,7 @@ import { ArrowLeftRight } from "lucide-react";
 
 import { ImageComparison } from "@/components/ui/image-comparison-slider";
 import { Badge } from "@/components/ui/badge";
+import { assetPath } from "@/lib/paths";
 
 export function BeforeAfter() {
   return (
@@ -23,8 +24,8 @@ export function BeforeAfter() {
 
         <div className="mt-12 flex justify-center">
           <ImageComparison
-            beforeImage="/images/scalp-before.jpg"
-            afterImage="/images/scalp-after.jpg"
+            beforeImage={assetPath("/images/scalp-before.jpg")}
+            afterImage={assetPath("/images/scalp-after.jpg")}
             altBefore="Couro cabeludo antes do tratamento capilar"
             altAfter="Couro cabeludo depois do tratamento capilar"
             beforeLabel="Antes"

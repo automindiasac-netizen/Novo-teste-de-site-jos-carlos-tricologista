@@ -3,6 +3,7 @@ import { CalendarCheck, MapPin, MessageCircle, ShieldCheck, Sparkles } from "luc
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { professional, stats } from "@/content/site-data";
+import { assetPath } from "@/lib/paths";
 import { getWhatsappUrl } from "@/lib/whatsapp";
 
 export function Hero() {
@@ -72,7 +73,7 @@ export function Hero() {
           <div className="animate-float-slow glass relative aspect-[4/5] w-full overflow-hidden rounded-[2.25rem]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/hero-portrait.jpg"
+              src={assetPath("/images/hero-portrait.jpg")}
               alt={`Foto de ${professional.name}, ${professional.role}`}
               className="h-full w-full object-cover object-top"
             />

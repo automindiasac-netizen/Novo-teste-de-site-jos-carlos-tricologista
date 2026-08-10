@@ -83,3 +83,28 @@ PDF/portfólio):
 npm install
 npm run dev
 ```
+
+## Publicar no GitHub Pages
+
+O site foi configurado para exportação estática (`output: "export"` em
+`next.config.ts`) — não depende de servidor, funciona 100% em GitHub Pages.
+
+**Opção recomendada — automático (`.github/workflows/deploy-pages.yml`):**
+1. No repositório, vá em **Settings → Pages**.
+2. Em "Source", selecione **GitHub Actions**.
+3. Pronto. Todo push na branch `claude/trichologist-website-design-59v7sm`
+   já dispara o workflow, que builda e publica sozinho. Você pode acompanhar
+   em **Actions**. O site fica em:
+   `https://automindiasac-netizen.github.io/Novo-teste-de-site-jos-carlos-tricologista/`
+
+**Opção manual (arquivo já pronto):** se preferir não usar Actions, gere o
+build localmente e suba o resultado:
+```bash
+npm run build:gh-pages   # gera a pasta out/
+```
+Depois publique o conteúdo da pasta `out/` na branch `gh-pages` (ou em
+Settings → Pages → "Deploy from a branch"). Um `.zip` desse build também foi
+enviado nesta conversa para conferência/backup.
+
+Se o nome do repositório mudar, atualize `repoName` em `next.config.ts`, o
+script `build:gh-pages` no `package.json` e a branch no workflow.

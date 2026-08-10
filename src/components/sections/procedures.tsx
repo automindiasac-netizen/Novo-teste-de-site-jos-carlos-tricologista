@@ -4,6 +4,7 @@ import { Activity, Droplet, Lightbulb, ScanSearch, Sun, Syringe } from "lucide-r
 import { CardItem, ExpandingCards } from "@/components/ui/expanding-cards";
 import { Badge } from "@/components/ui/badge";
 import { procedures } from "@/content/site-data";
+import { assetPath } from "@/lib/paths";
 
 const icons: Record<string, ReactNode> = {
   tricoscopia: <ScanSearch size={24} />,
@@ -18,7 +19,7 @@ const items: CardItem[] = procedures.map((p) => ({
   id: p.id,
   title: p.title,
   description: p.description,
-  imgSrc: p.image,
+  imgSrc: assetPath(p.image),
   icon: icons[p.id],
 }));
 
