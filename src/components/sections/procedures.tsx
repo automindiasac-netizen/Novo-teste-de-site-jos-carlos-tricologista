@@ -1,12 +1,5 @@
 import type { ReactNode } from "react";
-import {
-  Activity,
-  ClipboardList,
-  Droplet,
-  ScanSearch,
-  Sparkle,
-  Syringe,
-} from "lucide-react";
+import { Activity, Droplet, Lightbulb, ScanSearch, Sun, Syringe } from "lucide-react";
 
 import { CardItem, ExpandingCards } from "@/components/ui/expanding-cards";
 import { Badge } from "@/components/ui/badge";
@@ -14,11 +7,11 @@ import { procedures } from "@/content/site-data";
 
 const icons: Record<string, ReactNode> = {
   tricoscopia: <ScanSearch size={24} />,
-  mesoterapia: <Syringe size={24} />,
   microagulhamento: <Activity size={24} />,
-  laserterapia: <Sparkle size={24} />,
-  prp: <Droplet size={24} />,
-  consultoria: <ClipboardList size={24} />,
+  mesoterapia: <Syringe size={24} />,
+  "led-azul": <Lightbulb size={24} />,
+  "led-vermelho": <Sun size={24} />,
+  oleoterapia: <Droplet size={24} />,
 };
 
 const items: CardItem[] = procedures.map((p) => ({

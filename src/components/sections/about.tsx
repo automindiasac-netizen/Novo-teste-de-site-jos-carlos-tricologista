@@ -1,30 +1,5 @@
-import { GraduationCap, HeartPulse, Microscope, UserCheck } from "lucide-react";
-
+import { methodology, professional } from "@/content/site-data";
 import { Badge } from "@/components/ui/badge";
-import { professional } from "@/content/site-data";
-
-const pillars = [
-  {
-    icon: Microscope,
-    title: "Diagnóstico preciso",
-    text: "Avaliação tricoscópica detalhada antes de qualquer indicação de tratamento.",
-  },
-  {
-    icon: UserCheck,
-    title: "Cuidado individualizado",
-    text: "Protocolos desenhados para o histórico e as necessidades de cada paciente.",
-  },
-  {
-    icon: HeartPulse,
-    title: "Acompanhamento contínuo",
-    text: "Reavaliações periódicas para ajustar o tratamento conforme a evolução.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Base científica",
-    text: "Condutas fundamentadas em evidência científica e boas práticas da Tricologia.",
-  },
-];
 
 export function About() {
   return (
@@ -49,18 +24,25 @@ export function About() {
           </div>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
-          {pillars.map((pillar) => (
-            <div key={pillar.title} className="glass rounded-2xl p-6">
-              <pillar.icon className="size-6 text-primary" />
-              <h3 className="mt-4 text-base font-semibold text-foreground">
-                {pillar.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {pillar.text}
-              </p>
-            </div>
-          ))}
+        <div>
+          <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
+            Como funciona o atendimento
+          </p>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {methodology.map((step) => (
+              <div key={step.step} className="glass rounded-2xl p-6">
+                <span className="font-display text-2xl font-semibold text-primary">
+                  {step.step}
+                </span>
+                <h3 className="mt-3 text-base font-semibold text-foreground">
+                  {step.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {step.text}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

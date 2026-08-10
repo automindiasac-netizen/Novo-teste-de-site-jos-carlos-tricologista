@@ -1,44 +1,48 @@
 # Notas antes de publicar
 
 Este projeto foi criado a partir do pedido de site para o Dr. José Carlos
-Fontenele (Biomédico Tricologista). Durante o desenvolvimento, o ambiente de
-execução **bloqueou o acesso** aos seguintes links enviados na solicitação:
+Fontenele (Tricologista | Biomédico Esteta).
 
-- Pasta do Google Drive com o portfólio/PDF do profissional.
-- Perfil do Instagram [@drjosecarlosfontenele](https://www.instagram.com/drjosecarlosfontenele/).
+## O que já é conteúdo real
 
-Também não foi possível salvar em disco as 3 imagens anexadas na conversa
-(foto do profissional + fotos "antes/depois" do couro cabeludo) — este
-ambiente remoto não gravou os arquivos enviados por upload.
+O PDF de portfólio enviado (`ATENDIMENTOJOSÉCARLOS`) foi lido e usado como
+fonte oficial de conteúdo e imagens. Já são reais/extraídos do material dele:
 
-Por isso, o site foi construído com **placeholders claramente identificados**,
-que precisam ser substituídos antes de publicar:
+- Foto do profissional no Hero (`public/images/hero-portrait.jpg`) — cutout
+  original do PDF, recomposto sobre um fundo em gradiente na paleta do site.
+- Fotos dos 6 procedimentos (`public/images/procedure-*.jpg`): Tricoscopia,
+  Microagulhamento Capilar, Mesoterapia, LED Azul, LED Vermelho/Infravermelho
+  e Oleoterapia Capilar — todas fotos reais extraídas do PDF.
+- Textos da seção "Sobre" (biografia) e dos 4 passos de "Como funciona o
+  atendimento" (Anamnese, Tricoscopia, Protocolo individualizado, Home care)
+  — extraídos/adaptados do texto original do PDF.
+- Descrições dos 6 procedimentos — extraídas do texto original do PDF.
+- Título profissional "Tricologista | Biomédico Esteta" (conforme a arte do
+  PDF).
 
-## Imagens (pasta `public/images/`)
-- `hero-portrait.svg` → substituir pela foto real do profissional (a primeira
-  imagem enviada na conversa).
-- `scalp-before.svg` → substituir pela foto "antes" (a segunda imagem
-  enviada).
-- `scalp-after.svg` → substituir pela foto "depois" (a terceira imagem
-  enviada).
-- `procedure-*.svg` → são artes abstratas geradas para os cards de
-  procedimentos; podem ser trocadas por fotos reais do consultório/equipamentos
-  se desejar.
+## O que ainda é placeholder
 
-Ao trocar por fotos reais (JPG/PNG), atualize os `src` correspondentes em:
-- `src/components/sections/hero.tsx`
-- `src/components/sections/before-after.tsx`
+O PDF não trazia número de CRBM, telefone, e-mail, endereço ou link de
+WhatsApp/Maps (os botões "AGENDA" e "INSTAGRAM" da arte não tinham link
+clicável embutido no PDF). Também não foi possível acessar a pasta do Google
+Drive nem o Instagram (bloqueados neste ambiente), então esses dados
+continuam como exemplo em `src/content/site-data.ts`, marcados com
+`// TODO`:
 
-## Dados de contato e conteúdo (`src/content/site-data.ts`)
-Todos os campos marcados com `// TODO` precisam de confirmação:
 - Número de registro no CRBM.
 - Número de WhatsApp (`whatsappNumber`, formato internacional só com dígitos).
 - Telefone de exibição e e-mail de contato.
 - Endereço completo, bairro/cidade, CEP e link do Google Maps.
-- Estatísticas da Hero (pacientes atendidos, anos de experiência, satisfação).
-- Formação acadêmica, especializações e tempo de experiência reais (usados na
-  seção "Sobre").
-- Redes sociais adicionais (além do Instagram).
+- Redes sociais adicionais além do Instagram.
+
+### Seção "Resultados" (antes/depois)
+As duas fotos de couro cabeludo (antes/depois) que você colou diretamente no
+chat no início da conversa não puderam ser salvas em disco por este ambiente
+remoto, e não estavam neste PDF. `public/images/scalp-before.svg` e
+`scalp-after.svg` continuam sendo ilustrações genéricas — troque pelos
+arquivos reais em `src/components/sections/before-after.tsx` (`beforeImage`/
+`afterImage`) antes de publicar, já que é a única seção com imagens de
+exemplo hoje.
 
 ## Domínio
 `src/app/layout.tsx`, `src/app/sitemap.ts` e `src/app/robots.ts` usam um

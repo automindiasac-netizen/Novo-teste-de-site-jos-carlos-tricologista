@@ -38,11 +38,11 @@ export function Hero() {
             </Button>
           </div>
 
-          <dl className="mt-12 grid grid-cols-3 gap-4 border-t border-border pt-8 sm:max-w-md">
+          <dl className="mt-12 grid grid-cols-1 gap-4 border-t border-border pt-8 sm:grid-cols-3 sm:max-w-xl">
             {stats.map((stat) => (
               <div key={stat.label}>
                 <dt className="sr-only">{stat.label}</dt>
-                <dd className="text-2xl font-semibold text-foreground sm:text-3xl">
+                <dd className="font-display text-lg font-semibold text-foreground">
                   {stat.value}
                 </dd>
                 <dd className="mt-1 text-xs text-muted-foreground sm:text-sm">
@@ -72,7 +72,7 @@ export function Hero() {
           <div className="animate-float-slow glass relative aspect-[4/5] w-full overflow-hidden rounded-[2.25rem]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/hero-portrait.svg"
+              src="/images/hero-portrait.jpg"
               alt={`Foto de ${professional.name}, ${professional.role}`}
               className="h-full w-full object-cover object-top"
             />

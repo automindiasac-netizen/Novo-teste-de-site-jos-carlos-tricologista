@@ -1,24 +1,25 @@
 /**
  * Conteúdo central do site.
  *
- * IMPORTANTE: Não foi possível acessar a pasta do Google Drive nem o perfil do
- * Instagram informados (bloqueados neste ambiente de execução), então os campos
- * marcados com "// TODO" abaixo usam valores de exemplo e devem ser
- * conferidos/substituídos antes de publicar o site. Veja NOTES.md na raiz do
- * projeto para a lista completa.
+ * Textos e fotos dos procedimentos vêm do material (PDF) enviado pelo
+ * profissional. Não foi possível acessar a pasta do Google Drive nem o
+ * perfil do Instagram (bloqueados neste ambiente de execução), então os
+ * campos marcados com "// TODO" abaixo (contato, endereço, CRBM) ainda
+ * usam valores de exemplo e devem ser conferidos antes de publicar. Veja
+ * NOTES.md na raiz do projeto para a lista completa.
  */
 
 export const professional = {
   name: "Dr. José Carlos Fontenele",
-  role: "Biomédico Tricologista",
+  role: "Tricologista | Biomédico Esteta",
   crbm: "CRBM [inserir número de registro]", // TODO: confirmar número do CRBM
-  tagline: "Cuidado especializado para a saúde do seu couro cabeludo e cabelo",
+  tagline: "Resgate sua autoestima através da saúde capilar",
   shortBio:
-    "Biomédico especialista em Tricologia, dedicado a diagnosticar e tratar queda de cabelo, calvície e demais condições do couro cabeludo com métodos baseados em evidência e acompanhamento próximo de cada paciente.",
+    "Biomédico especialista em Tricologia, dedicado a restaurar a saúde capilar e a autoestima por meio de um acompanhamento individualizado, estratégico e baseado em evidências.",
   longBio: [
-    "Com atuação focada em saúde capilar, o Dr. José Carlos Fontenele une avaliação clínica detalhada, tecnologia de tricoscopia digital e protocolos personalizados para tratar alopecia, queda capilar, oleosidade excessiva, caspa e outras condições do couro cabeludo.",
-    "O atendimento começa sempre por um diagnóstico preciso: histórico de saúde, exame tricoscópico e, quando necessário, encaminhamento para exames complementares. A partir disso, é desenhado um plano terapêutico individualizado, com metas claras e reavaliações periódicas para acompanhar a evolução de cada paciente.",
-    "// TODO: substituir por formação acadêmica, cursos de especialização, tempo de experiência e certificações reais extraídas do portfólio/PDF do profissional.",
+    "Com formação em Fisioterapia e Biomedicina, além de mestrado e especializações em Estética, Anatomia e Saúde Pública, o Dr. José Carlos sempre teve forte paixão pelo ensino de Anatomia Humana — área na qual atua até hoje em uma faculdade de Medicina.",
+    "Paralelamente à docência, a prática clínica e a ciência sempre foram grandes pilares da sua trajetória profissional. Foi na especialização em tricologia que encontrou seu propósito: unir ciência e educação para transformar vidas.",
+    "Mais do que tratar os cabelos, ele ajuda a restaurar a saúde capilar e a autoestima por meio de um acompanhamento individualizado, estratégico e baseado em evidências.",
   ],
   instagramHandle: "@drjosecarlosfontenele",
   instagramUrl: "https://www.instagram.com/drjosecarlosfontenele/",
@@ -42,53 +43,80 @@ export const professional = {
 } as const;
 
 export const stats = [
-  { value: "+1000", label: "Pacientes atendidos" }, // TODO: confirmar número real
-  { value: "+8", label: "Anos de experiência" }, // TODO: confirmar tempo de experiência
-  { value: "95%", label: "Satisfação nos atendimentos" }, // TODO: confirmar indicador real
+  { value: "Fisioterapia & Biomedicina", label: "Formação de base" },
+  { value: "Mestrado", label: "Estética, Anatomia e Saúde Pública" },
+  { value: "Docente", label: "Anatomia Humana em faculdade de Medicina" },
 ] as const;
 
 export const procedures = [
   {
     id: "tricoscopia",
-    title: "Tricoscopia Digital",
+    title: "Tricoscopia",
     description:
-      "Avaliação minuciosa do couro cabeludo e dos fios com tricoscópio digital, permitindo diagnóstico preciso da causa da queda capilar.",
-    image: "/images/procedure-tricoscopia.svg",
-  },
-  {
-    id: "mesoterapia",
-    title: "Mesoterapia Capilar",
-    description:
-      "Microinjeções de ativos direcionados ao couro cabeludo para estimular o crescimento e fortalecer os fios enfraquecidos.",
-    image: "/images/procedure-mesoterapia.svg",
+      "O exame que permite enxergar o que está por trás da sua queixa, muitas vezes invisível a olho nu — direcionando um diagnóstico mais assertivo e um tratamento realmente individualizado.",
+    image: "/images/procedure-tricoscopia.jpg",
   },
   {
     id: "microagulhamento",
     title: "Microagulhamento Capilar",
     description:
-      "Técnica que estimula a produção natural de colágeno e a absorção de ativos, potencializando os resultados do tratamento.",
-    image: "/images/procedure-microagulhamento.svg",
+      "Técnica que utiliza microperfurações controladas no couro cabeludo para estimular a regeneração tecidual, aumentar a circulação local e potencializar a absorção de ativos.",
+    image: "/images/procedure-microagulhamento.jpg",
   },
   {
-    id: "laserterapia",
-    title: "Laserterapia Capilar",
+    id: "mesoterapia",
+    title: "Mesoterapia",
     description:
-      "Terapia a laser de baixa intensidade (LLLT) que estimula a microcirculação do couro cabeludo e a atividade folicular.",
-    image: "/images/procedure-laserterapia.svg",
+      "Aplicação de ativos diretamente no couro cabeludo, permitindo uma ação mais direcionada, com foco em modular inflamação, nutrir os folículos e estimular o crescimento dos fios.",
+    image: "/images/procedure-mesoterapia.jpg",
   },
   {
-    id: "prp",
-    title: "PRP Capilar",
+    id: "led-azul",
+    title: "LED Azul",
     description:
-      "Uso de plasma rico em plaquetas para estimular fatores de crescimento naturais e favorecer o fortalecimento capilar.",
-    image: "/images/procedure-prp.svg",
+      "Tecnologia segura e não invasiva, com ação principalmente antimicrobiana. Auxilia no controle de alterações do couro cabeludo relacionadas à oleosidade excessiva e desequilíbrio microbiológico.",
+    image: "/images/procedure-led-azul.jpg",
   },
   {
-    id: "consultoria",
-    title: "Consultoria Capilar",
+    id: "led-vermelho",
+    title: "LED Vermelho/Infravermelho",
     description:
-      "Plano de cuidados home-care personalizado, com indicação de produtos e rotina adequada ao seu tipo de couro cabeludo.",
-    image: "/images/procedure-consultoria.svg",
+      "Fotobiomodulação que atua na bioestimulação celular, aumentando a atividade metabólica dos folículos, melhorando a microcirculação e favorecendo a fase de crescimento dos fios.",
+    image: "/images/procedure-led-vermelho.jpg",
+  },
+  {
+    id: "oleoterapia",
+    title: "Oleoterapia Capilar",
+    description:
+      "Utilização de óleos específicos com propriedades nutritivas, anti-inflamatórias e restauradoras, para equilibrar o couro cabeludo, melhorar a barreira cutânea e a saúde global dos fios.",
+    image: "/images/procedure-oleoterapia.jpg",
+  },
+] as const;
+
+export const methodology = [
+  {
+    step: "01",
+    title: "Anamnese",
+    text:
+      "A primeira consulta é a etapa mais importante da tricologia: o primeiro contato com o paciente, de forma calma, sem pressa e com atenção total aos detalhes — essencial para identificar as possíveis causas da queda capilar.",
+  },
+  {
+    step: "02",
+    title: "Tricoscopia",
+    text:
+      "Junto com a anamnese, o exame tricoscópico permite compreender de forma precisa o que está acontecendo com o couro cabeludo e os fios, direcionando um diagnóstico mais assertivo.",
+  },
+  {
+    step: "03",
+    title: "Protocolo individualizado",
+    text:
+      "Seu protocolo capilar é desenvolvido de forma totalmente individualizada e compartilhado com você para aprovação — construído com base na ciência, respeitando sua realidade e seus objetivos.",
+  },
+  {
+    step: "04",
+    title: "Home care",
+    text:
+      "Uma das etapas mais importantes do tratamento: ativos individualizados, shampoos e tônicos personalizados que mantêm o couro cabeludo em equilíbrio fora do consultório.",
   },
 ] as const;
 
