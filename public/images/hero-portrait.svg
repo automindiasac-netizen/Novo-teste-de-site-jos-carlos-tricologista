@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" width="900" height="1125">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1513"/>
+      <stop offset="55%" stop-color="#152420"/>
+      <stop offset="100%" stop-color="#0a0c0d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#35d399" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#35d399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1125" fill="url(#bg)"/>
+  <rect width="900" height="1125" fill="url(#glow)"/>
+  <g opacity="0.9" fill="none" stroke="#35d399" stroke-width="2">
+    <circle cx="450" cy="430" r="150"/>
+    <path d="M330 560 q120 -70 240 0 l0 140 q-120 60 -240 0 z"/>
+  </g>
+  <g fill="#f3f1ea" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="450" y="860" font-size="30" font-weight="600" letter-spacing="1">Foto do Dr. Jose Carlos Fontenele</text>
+    <text x="450" y="900" font-size="20" fill="#a3aca8">Substituir por foto profissional em alta resolucao</text>
+  </g>
+</svg>
