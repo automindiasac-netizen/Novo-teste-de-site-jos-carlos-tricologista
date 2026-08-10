@@ -23,8 +23,8 @@ export function BeforeAfter() {
 
         <div className="mt-12 flex justify-center">
           <ImageComparison
-            beforeImage="/images/scalp-before.svg"
-            afterImage="/images/scalp-after.svg"
+            beforeImage="/images/scalp-before.jpg"
+            afterImage="/images/scalp-after.jpg"
             altBefore="Couro cabeludo antes do tratamento capilar"
             altAfter="Couro cabeludo depois do tratamento capilar"
             beforeLabel="Antes"
@@ -33,8 +33,8 @@ export function BeforeAfter() {
         </div>
 
         <p className="mt-6 text-center text-xs text-muted-foreground">
-          Imagens meramente ilustrativas. Resultados variam de acordo com cada
-          paciente e diagnóstico individual.
+          Caso real acompanhado pelo Dr. José Carlos. Resultados variam de
+          acordo com cada paciente e diagnóstico individual.
         </p>
       </div>
     </section>

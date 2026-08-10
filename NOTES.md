@@ -22,6 +22,9 @@ fonte oficial de conteúdo e imagens. Já são reais/extraídos do material dele
 - WhatsApp: `(88) 99644-7060` (confirmado pelo profissional).
 - Instagram: [@drjosecarlosfontenele](https://www.instagram.com/drjosecarlosfontenele/)
   (confirmado pelo profissional).
+- Fotos reais de antes/depois na seção "Resultados"
+  (`public/images/scalp-before.jpg` / `scalp-after.jpg`), enviadas pelo
+  profissional como anexo diretamente no repositório.
 
 ## O que ainda é placeholder
 
@@ -39,19 +42,11 @@ dados continuam como exemplo em `src/content/site-data.ts`, marcados com
 Foi enviada uma foto de referência para o Hero (blazer verde-oliva, fundo
 transparente) diretamente colada no chat, mas este ambiente remoto não
 consegue salvar em disco imagens coladas inline (apenas arquivos enviados
-como anexo/upload, como o PDF, ficam acessíveis). A foto usada hoje em
-`public/images/hero-portrait.jpg` é a mesma pose/sessão extraída do PDF
-(variante de blazer preto). Para usar exatamente a foto do blazer verde,
-reenvie-a como **anexo de arquivo** (não colada no corpo da mensagem) e
-troque `public/images/hero-portrait.jpg`.
-
-### Seção "Resultados" (antes/depois)
-As duas fotos de couro cabeludo (antes/depois) coladas no chat no início da
-conversa têm a mesma limitação acima e não estavam neste PDF.
-`public/images/scalp-before.svg` e `scalp-after.svg` continuam sendo
-ilustrações genéricas — troque pelos arquivos reais (enviados como anexo)
-em `src/components/sections/before-after.tsx` (`beforeImage`/`afterImage`)
-antes de publicar.
+como anexo/upload ficam acessíveis — foi assim que as fotos de antes/depois
+e o PDF chegaram). A foto usada hoje em `public/images/hero-portrait.jpg` é
+a mesma pose/sessão extraída do PDF (variante de blazer preto). Para usar
+exatamente a foto do blazer verde, envie-a como **anexo de arquivo** (não
+colada no corpo da mensagem) e troque `public/images/hero-portrait.jpg`.
 
 ## Domínio
 `src/app/layout.tsx`, `src/app/sitemap.ts` e `src/app/robots.ts` usam um
