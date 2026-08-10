@@ -12,7 +12,7 @@ export function BeforeAfter() {
             <ArrowLeftRight className="size-3.5" />
             Resultados reais
           </Badge>
-          <h2 className="mt-6 text-balance font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-6 text-balance font-display text-3xl font-normal tracking-tight text-foreground italic sm:text-4xl">
             Evolução acompanhada de perto, do diagnóstico ao resultado
           </h2>
           <p className="mt-4 text-muted-foreground">

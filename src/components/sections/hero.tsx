@@ -18,7 +18,7 @@ export function Hero() {
             Biomedicina especializada em Tricologia
           </Badge>
 
-          <h1 className="mt-6 text-balance font-display text-4xl leading-[1.08] font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-balance font-display text-4xl leading-[1.1] font-normal tracking-tight text-foreground italic sm:text-5xl lg:text-6xl">
             {professional.tagline}
           </h1>
 
@@ -78,17 +78,17 @@ export function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
-            <div className="glass absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-2xl px-4 py-3">
+            <div className="glass-dark absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-2xl px-4 py-3">
               <div>
-                <p className="text-sm font-semibold text-foreground">{professional.name}</p>
-                <p className="text-xs text-muted-foreground">{professional.role}</p>
+                <p className="text-sm font-semibold text-white">{professional.name}</p>
+                <p className="text-xs text-white/65">{professional.role}</p>
               </div>
-              <span className="flex h-2.5 w-2.5 rounded-full bg-primary shadow-[0_0_12px_2px_rgba(53,211,153,0.6)]" />
+              <span className="flex h-2.5 w-2.5 rounded-full bg-primary shadow-[0_0_12px_2px_rgba(169,128,63,0.6)]" />
             </div>
           </div>
 
           <div className="glass absolute -top-5 -right-5 hidden rounded-2xl px-4 py-3 sm:block">
-            <p className="text-xs text-muted-foreground">Diagnóstico com</p>
+            <p className="label-caps text-[0.65rem] text-muted-foreground">Diagnóstico com</p>
             <p className="text-sm font-semibold text-foreground">Tricoscopia Digital</p>
           </div>
         </div>

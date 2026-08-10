@@ -17,7 +17,7 @@ export function Location() {
               <MapPin className="size-3.5" />
               Onde atendemos
             </Badge>
-            <h2 className="mt-6 text-balance font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="mt-6 text-balance font-display text-3xl font-normal tracking-tight text-foreground italic sm:text-4xl">
               {location.clinicName}
             </h2>
 

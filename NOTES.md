@@ -58,14 +58,28 @@ antes de publicar.
 domínio de exemplo (`https://www.drjosecarlosfontenele.com.br`) — atualize
 para o domínio real antes de publicar.
 
+## Identidade visual
+
+Paleta e tipografia definidas a pedido do profissional (ecoando o próprio
+PDF/portfólio):
+
+- Cores (`src/app/globals.css`): `#141310` preto quente (texto), `#FBF9F5`
+  papel (fundo), `#EDE6D9` nude (superfícies), `#8A8172` cinza-pedra (texto
+  secundário), `#A9803F` dourado (accent/primary).
+- Tipografia (`src/app/layout.tsx`): Playfair Display itálico para títulos
+  editoriais (Hero, nome do profissional, headlines de seção), Bebas Neue
+  para rótulos/seções em caixa alta (badges, nav, títulos de procedimentos,
+  cards), Montserrat para o corpo do texto.
+- Estilo "liquid glass": painéis translúcidos com `backdrop-filter: blur()`
+  em tom claro (`.glass`) sobre o fundo papel, com uma variante escura
+  (`.glass-dark`) para legendas sobre fotos.
+
 ## Stack utilizada
 - Next.js 16 (App Router) + TypeScript + Tailwind CSS v4.
 - Estrutura de componentes no padrão shadcn (`components.json`,
   `src/components/ui`, `src/lib/utils.ts` com `cn()`).
 - `lucide-react` para ícones e `framer-motion` para as animações do card de
   localização.
-- Estilo "liquid glass": painéis translúcidos com `backdrop-filter: blur()`
-  (classes utilitárias `.glass` e `.glass-light` em `globals.css`).
 - Dados estruturados JSON-LD (`MedicalBusiness`/`Physician`), `sitemap.xml` e
   `robots.txt` para SEO básico.
 

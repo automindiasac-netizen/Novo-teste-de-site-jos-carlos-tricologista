@@ -24,6 +24,7 @@
 
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
+  --font-label: var(--font-label);
 
   --radius-sm: calc(var(--radius) - 6px);
   --radius-md: calc(var(--radius) - 2px);
@@ -35,24 +36,24 @@
 :root {
   --radius: 1rem;
 
-  /* Deep clinical charcoal base with an emerald "liquid glass" accent */
-  --background: #0a0c0d;
-  --foreground: #f3f1ea;
+  /* Editorial paper palette, echoing the professional's own portfolio */
+  --background: #fbf9f5; /* papel */
+  --foreground: #141310; /* preto quente */
 
-  --card: #121616;
-  --card-foreground: #f3f1ea;
+  --card: #ede6d9; /* nude */
+  --card-foreground: #141310;
 
-  --muted: #171b1b;
-  --muted-foreground: #a3aca8;
+  --muted: #f3efe6;
+  --muted-foreground: #8a8172; /* cinza-pedra */
 
-  --primary: #35d399;
-  --primary-foreground: #06110c;
+  --primary: #a9803f; /* dourado accent */
+  --primary-foreground: #141310;
 
-  --accent: #c9a227;
-  --accent-foreground: #1a1204;
+  --accent: #a9803f;
+  --accent-foreground: #141310;
 
-  --border: rgba(255, 255, 255, 0.09);
-  --ring: rgba(53, 211, 153, 0.5);
+  --border: rgba(20, 19, 16, 0.1);
+  --ring: rgba(169, 128, 63, 0.45);
 
   --whatsapp: #25d366;
   --whatsapp-foreground: #06210f;
@@ -71,44 +72,50 @@ body {
 }
 
 @layer utilities {
-  /* Liquid-glass surface: frosted, translucent, soft inner highlight */
+  /* Liquid-glass surface: frosted paper, translucent, soft inner highlight */
   .glass {
     background: linear-gradient(
       to bottom right,
-      rgba(255, 255, 255, 0.08),
-      rgba(255, 255, 255, 0.02)
-    );
-    backdrop-filter: blur(20px) saturate(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(140%);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow:
-      0 1px 0 0 rgba(255, 255, 255, 0.08) inset,
-      0 8px 30px rgba(0, 0, 0, 0.35);
-  }
-
-  .glass-light {
-    background: linear-gradient(
-      to bottom right,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.35)
+      rgba(255, 255, 255, 0.72),
+      rgba(255, 255, 255, 0.38)
     );
     backdrop-filter: blur(20px) saturate(160%);
     -webkit-backdrop-filter: blur(20px) saturate(160%);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(20, 19, 16, 0.08);
     box-shadow:
-      0 1px 0 0 rgba(255, 255, 255, 0.8) inset,
-      0 8px 30px rgba(20, 30, 25, 0.08);
+      0 1px 0 0 rgba(255, 255, 255, 0.9) inset,
+      0 8px 30px rgba(20, 19, 16, 0.07);
+  }
+
+  .glass-dark {
+    background: linear-gradient(
+      to bottom right,
+      rgba(20, 19, 16, 0.85),
+      rgba(20, 19, 16, 0.65)
+    );
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.06) inset,
+      0 8px 30px rgba(20, 19, 16, 0.35);
   }
 
   .text-balance {
     text-wrap: balance;
   }
 
+  .label-caps {
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
   .mesh-glow {
     background-image:
-      radial-gradient(60% 50% at 15% 10%, rgba(53, 211, 153, 0.22), transparent 60%),
-      radial-gradient(45% 40% at 90% 20%, rgba(201, 162, 39, 0.14), transparent 60%),
-      radial-gradient(70% 60% at 50% 100%, rgba(53, 211, 153, 0.1), transparent 60%);
+      radial-gradient(60% 50% at 15% 10%, rgba(169, 128, 63, 0.16), transparent 60%),
+      radial-gradient(45% 40% at 90% 20%, rgba(169, 128, 63, 0.1), transparent 60%),
+      radial-gradient(70% 60% at 50% 100%, rgba(20, 19, 16, 0.05), transparent 60%);
   }
 }
 

@@ -1,17 +1,24 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Bebas_Neue, Montserrat, Playfair_Display } from "next/font/google";
 
 import { professional } from "@/content/site-data";
 import "./globals.css";
 
-const manrope = Manrope({
+const montserrat = Montserrat({
   variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const fraunces = Fraunces({
+const playfair = Playfair_Display({
   variable: "--font-display",
   subsets: ["latin"],
+  style: ["normal", "italic"],
+});
+
+const bebasNeue = Bebas_Neue({
+  variable: "--font-label",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 const siteUrl = "https://www.drjosecarlosfontenele.com.br"; // TODO: atualizar para o domínio real
@@ -42,7 +49,7 @@ export const metadata: Metadata = {
     siteName: professional.name,
     title: `${professional.name} | ${professional.role}`,
     description: professional.shortBio,
-    images: [{ url: "/images/hero-portrait.svg", width: 900, height: 1125 }],
+    images: [{ url: "/images/hero-portrait.jpg", width: 1200, height: 1500 }],
   },
   twitter: {
     card: "summary_large_image",
@@ -53,7 +60,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a0c0d",
+  themeColor: "#FBF9F5",
   width: "device-width",
   initialScale: 1,
 };
@@ -63,7 +70,7 @@ const jsonLd = {
   "@type": "MedicalBusiness",
   name: professional.location.clinicName,
   description: professional.shortBio,
-  image: `${siteUrl}/images/hero-portrait.svg`,
+  image: `${siteUrl}/images/hero-portrait.jpg`,
   url: siteUrl,
   telephone: professional.phoneDisplay,
   email: professional.email,
@@ -87,7 +94,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
-      className={`${manrope.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${montserrat.variable} ${playfair.variable} ${bebasNeue.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <script

@@ -30,7 +30,7 @@ export function Footer() {
               href={getWhatsappUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="glass mt-6 inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-white/[0.06]"
+              className="glass mt-6 inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground/[0.04]"
             >
               <MessageCircle className="size-4 text-whatsapp" />
               Falar no WhatsApp
@@ -38,7 +38,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-foreground">Navegação</h3>
+            <h3 className="label-caps text-sm text-foreground">Navegação</h3>
             <ul className="mt-4 space-y-2.5">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -54,7 +54,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-foreground">Contato</h3>
+            <h3 className="label-caps text-sm text-foreground">Contato</h3>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-2.5 text-sm text-muted-foreground">
                 <Phone className="mt-0.5 size-4 shrink-0 text-primary" />

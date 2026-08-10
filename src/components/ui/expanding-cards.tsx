@@ -95,7 +95,7 @@ export const ExpandingCards = React.forwardRef<
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
 
           <article className="absolute inset-0 flex flex-col justify-end gap-2 p-5">
-            <h3 className="hidden origin-left rotate-90 text-sm font-medium tracking-wider text-white/80 uppercase opacity-100 transition-all duration-300 ease-out group-data-[active=true]:opacity-0 md:block">
+            <h3 className="label-caps hidden origin-left rotate-90 text-base tracking-wider text-white/80 opacity-100 transition-all duration-300 ease-out group-data-[active=true]:opacity-0 md:block">
               {item.title}
             </h3>
 
@@ -103,7 +103,7 @@ export const ExpandingCards = React.forwardRef<
               {item.icon}
             </div>
 
-            <h3 className="text-xl font-semibold text-white opacity-0 transition-all delay-150 duration-300 ease-out group-data-[active=true]:opacity-100">
+            <h3 className="label-caps text-2xl text-white opacity-0 transition-all delay-150 duration-300 ease-out group-data-[active=true]:opacity-100">
               {item.title}
             </h3>
 

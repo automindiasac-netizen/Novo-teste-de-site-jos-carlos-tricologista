@@ -30,7 +30,7 @@ export function Procedures() {
           <Badge variant="primary" className="mx-auto">
             Procedimentos
           </Badge>
-          <h2 className="mt-6 text-balance font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="label-caps mt-6 text-balance text-4xl text-foreground sm:text-5xl">
             Protocolos tricológicos personalizados
           </h2>
           <p className="mt-4 text-muted-foreground">

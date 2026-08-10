@@ -214,12 +214,12 @@ export function LocationMap({
                   fill="none"
                   className="drop-shadow-lg"
                   style={{
-                    filter: "drop-shadow(0 0 10px rgba(53, 211, 153, 0.5))",
+                    filter: "drop-shadow(0 0 10px rgba(169, 128, 63, 0.5))",
                   }}
                 >
                   <path
                     d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
-                    fill="#35D399"
+                    fill="#A9803F"
                   />
                   <circle cx="12" cy="9" r="2.5" className="fill-background" />
                 </svg>
@@ -273,8 +273,8 @@ export function LocationMap({
                 className="text-primary"
                 animate={{
                   filter: isHovered
-                    ? "drop-shadow(0 0 8px rgba(53, 211, 153, 0.6))"
-                    : "drop-shadow(0 0 4px rgba(53, 211, 153, 0.3))",
+                    ? "drop-shadow(0 0 8px rgba(169, 128, 63, 0.6))"
+                    : "drop-shadow(0 0 4px rgba(169, 128, 63, 0.3))",
                 }}
                 transition={{ duration: 0.3 }}
               >

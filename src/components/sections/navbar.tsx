@@ -46,7 +46,7 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="rounded-full px-3.5 py-2 text-sm text-muted-foreground transition-colors hover:bg-white/5 hover:text-foreground"
+                className="label-caps rounded-full px-3.5 py-2 text-xs tracking-wider text-muted-foreground transition-colors hover:bg-foreground/5 hover:text-foreground"
               >
                 {link.label}
               </a>
@@ -81,7 +81,7 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm text-foreground hover:bg-white/5"
+                className="label-caps rounded-xl px-4 py-3 text-sm tracking-wider text-foreground hover:bg-foreground/5"
               >
                 {link.label}
               </a>
